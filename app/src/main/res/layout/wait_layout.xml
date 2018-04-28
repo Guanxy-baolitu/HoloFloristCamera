@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.holofloristcamera.WaitActivity">
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="照片摄制成功，请留意是否有明信片弹出哟~"
+    android:paddingBottom="150dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+    android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未能制成明信片？\n
+1. 花妖没有准备好拍照姿势，拍下来的照片是不会喜欢哒，所以尝试看她的眼睛提醒她要拍照哦~；\n
+2. 如果已经开启荷灯或花材制作，花妖会专心起来，是不会分心为你摆拍照姿势的~；\n
+3. 花界对摄影的审美是横平竖直，请确认水平与垂直角度均符合要求哦；\n
+4. 随意拍下的也会被过滤掉呢，把相机贴于眼前才会被认为是专业的摄影师~；\n
+5. 如果确认蓝牙连接也没有问题，那么只能用神秘力量来解释了QAQ，大人请重拍一张试试？"
+        android:paddingBottom="0dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/ReCaptureBtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_margin="55dp"
+
+        android:background="@color/colorAccent"
+        android:textColor="@color/pureWhite"
+        android:text="重拍一张"
+        android:layout_gravity="right|bottom"
+        />
+
+</FrameLayout>
+
+
