@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     private int plainColor, greenColor;
     private DecimalFormat dformat;
     private int thresholdAngle=18;
+    private int thresholdAngley=45;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -151,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
     private void startAdvertising()
     {
         if(mBLEAdvertiser == null) return;
-        if(Math.abs(xValue)>thresholdAngle||Math.abs(yValue)>thresholdAngle) return;
+        if(Math.abs(xValue)>thresholdAngle||Math.abs(yValue)>thresholdAngley) return;
         AdvertiseSettings settings = new AdvertiseSettings.Builder()
                 .setAdvertiseMode(AdvertiseSettings.ADVERTISE_MODE_LOW_LATENCY)
                 .setConnectable(false)
@@ -254,7 +255,7 @@ UI feedback to the user would go here.
                 else{
                     x.setTextColor(greenColor);
                 }
-                if(yValue>thresholdAngle||yValue<-thresholdAngle){
+                if(yValue>thresholdAngley||yValue<-thresholdAngley){
                     y.setTextColor(plainColor);
                 }
                 else{
